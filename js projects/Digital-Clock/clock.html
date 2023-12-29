@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fff;
+    }
+
+    .clock {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 400px;
+     
+    }
+
+    .date {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .time {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .hours,.minutes,.seconds{
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      background-color: rgba(128, 0, 128, 0.501);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+        <body>
+          <div class="container">
+            <div class="clock">
+              <div class="date"></div>
+              <div class="time">
+                <div class="hour">
+                  <div class="hours"></div>
+                  <p>Hours</p>
+                </div>
+                <figure>
+                  <div class="minutes"></div>
+                  <figcaption>Minutes</figcaption>
+                </figure>
+                <figure>
+                  <div class="seconds"></div>
+                  <figcaption>Seconds</figcaption>
+                </figure>
+                
+              </div>
+            </div>
+          </div>
+
+          <script>
+            var clock = document.querySelector(".clock");
+            var date = clock.querySelector(".date");
+            var time = clock.querySelector(".time");
+            var hours = time.querySelector(".hours");
+            var minutes = time.querySelector(".minutes");
+            var seconds = time.querySelector(".seconds");
+
+            function updateClock(){
+              var now = new Date();
+              var hoursText = now.getHours();
+              var minutesText = now.getMinutes();
+              var secondsText = now.getSeconds();
+
+              if(hoursText<10){
+                hoursText='0'+hoursText;
+              }
+              if(minutesText<10){
+                minutesText='0'+minutesText;
+              }
+              if(secondsText<10){
+                secondsText="0"+secondsText;
+              }
+              hours.innerHTML=hoursText;
+              minutes.innerHTML=minutesText;
+              seconds.innerHTML=secondsText;
+            }
+
+            function updateDate(){
+              var now = new Date();
+              var day = now.getDate();
+              var month = now.getMonth() + 1;
+              var year = now.getFullYear();
+
+
+              if(day<10){
+                day="0"+day;
+              }
+              var ordinals= day=== "01"?"st":day==="02"?"nd":day==="03"?"rd":"th";
+
+              var months=["January","Febraury","March","April","May","June","July","August","September","October","November","Decenber"];
+
+             date.innerHTML=day+ordinals+" "+months[month-1]+" - "+year;
+            }
+
+            
+
+            updateClock();
+            updateDate();
+
+            setInterval(updateClock, 1000);
+            setInterval(updateDate, 1000);
+          </script>
+        </body>
+
+</html>
