@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce Website</title>
+    <link rel="stylesheet" href="./CSS/global.css" />
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <script src="https://kit.fontawesome.com/b0dbb91657.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="had">
+        <section id="header">
+            <!--Header section-->
+            <section class="logo-section">
+                <img src="./Assets/images/gloabl_images/headerlogo.png" alt="Logo" id="logo" />
+            </section>
+            <section class="wrap">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </section>
+            <section class="search-bar">
+                <div id="dropdown">
+                    <select id="select_all">
+                        <option value="">All         <i class="fa-solid fa-angle-down fa-2xl" class="ico"></i></option>
+                        <option value="India">All1</option>
+                        <option value="Pak">All2</option>
+                    </select>
+                </div>
+                <!--Drop down ends-->
+                <!--Search Bar starts-->
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search" />
+                </div>
+                <i class="fa-solid fa-magnifying-glass fa-xl" id="search"></i>
+
+                <!--Search Bar ends-->
+            </section>
+            <section class="icon">
+                <i class="fa-solid fa-user fa-xl" id="profile" ></i>
+            </section>
+
+            <section class="icon">
+                <i class="fa-solid fa-cart-shopping fa-xl" id="cart"></i>
+            </section>
+        </section>
+    </header>
+    <!-- <div id="profile_details">
+        <div><i class="fa-solid fa-user fa-lg"></i> &nbsp;   My profile</div>
+        <div><i class="fa-solid fa-gear fa-lg"></i> &nbsp;   Settings</div>
+        <div><i class="fa-solid fa-bell fa-lg"></i> &nbsp;  My profile</div>
+        <div><i class="fa-solid fa-user fa-lg"></i>  &nbsp;  My profile</div>
+    </div> -->
+    <!--Header section closed-->
+
+    <!--Banner section start-->
+    <section class="banner_container">
+        <div class="container">
+            <div class="slider">
+                <div class="slider__slides">
+                    <div class="slider__slide active">
+                        <img src="./Assets/images/homepage_images/banner-1.jpg" alt="slide1" />
+                    </div>
+                    <div class="slider__slide">
+                        <img src="./Assets/images/homepage_images/banner-2.jpg" alt="slide2" />
+                    </div>
+                    <div class="slider__slide">
+                        <img src="./Assets/images/homepage_images/banner-3.jpg" alt="slide3" />
+                    </div>
+                </div>
+                <div id="nav-button--prev" class="slider__nav-button"></div>
+                <div id="nav-button--next" class="slider__nav-button"></div>
+                <div class="slider__nav">
+                    <div class="slider__navlink active"></div>
+                    <div class="slider__navlink"></div>
+                    <div class="slider__navlink"></div>
+                </div>
+            </div>
+        </div>
+        <div class="Banner_text">
+            <h1>Effortlessly cool,for<br>
+                the traditionalists of<br>
+                today
+            </h1>
+            <a href="#">EXPLORE COLLECTIONS</a>
+        </div>
+    </section>
+    <!--Banner section closed-->
+    <!--Our services container-->
+    <section class="container_of_services">
+        <div class="box">
+            <i class="fa-solid fa-truck-fast fa-2xl"></i>
+            <h3>Two-hour delivery</h3>
+            <p>Available of most metros on selected in-stock products</p>
+            <a href="#">LEARN MORE</a>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-message fa-2xl"></i>
+            <h3>Get help buying</h3>
+            <p>Have a question? Call a specialist or chat online for help</p>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-percent fa-2xl"></i>
+            <h3>Find the card for you</h3>
+            <p>Get 3% daily cash with special financing offers from us</p>
+            <a href="#">LEARN MORE</a>
+        </div>
+    </section>
+    <section class="container_of_products">
+        <div class="product1">
+            <img src="./Assets/images/homepage_images/product-1.jpg" alt="product-1" />
+            <div class="product_specifications">
+                <h3>Metro 38 Date</h3>
+                <p>Refference 1102</p>
+                <a href="#"><button><i class="fa-solid fa-cart-plus fa-xl"></i> &dollar; 399</button></a>
+            </div>
+        </div>
+        <div class="product2">
+            <img src="./Assets/images/homepage_images/product-1.jpg" alt="product-1" />
+            <div class="product_specifications">
+                <h3>Metro 38 Date</h3>
+                <p>Refference 1102</p>
+                <a href="#"><button><i class="fa-solid fa-cart-plus fa-xl"></i> &dollar; 399</button></a>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------2-Our services container ends------------------------------>
+    <!--------------------------------image+ content box------------------------------------------>
+    <section class="content">
+        <div class="image_container">
+            <img src="./Assets/images/homepage_images/content-2.jpg" />
+        </div>
+        <div class="content_content_container">
+            <h3>ALL-IN-ONE VR</h3>
+            <h3 class="con">Always ready when <br>you are</h3>
+            <p>oculus go is our all-in-one VR headset that's<br>portable and easy to use.Experience<br>and entertainment
+                on the go with no PC,wires or<br>hassles.</p>
+        </div>
+    </section>
+    <!-----------------------------------------content1 ends-->
+    <!-----------------------------------------Oculus Quest product three boxes------------------------->
+    <section class="main_container">
+        <figure>
+            <img src="./Assets/images/homepage_images/product-2.jpg" />
+            <figcaption class="image_caption1">
+                <h3>Oculus Quest</h3>
+                <p>All in one gaming headset with lightweight, flexible desig </p>
+                <span><b>&dollar; 399</b></span>
+                <a href="#"><button><i class="fa-solid fa-cart-plus fa-xl"></i> Add To Cart</button></a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./Assets/images/homepage_images/product-2.jpg" />
+            <figcaption class="image_caption1">
+                <h3>Oculus Quest</h3>
+                <p>All in one gaming headset with lightweight, flexible desig </p>
+                <span><b>&dollar; 399</b></span>
+                <a href="#"><button><i class="fa-solid fa-cart-plus fa-xl"></i> Add To Cart</button></a>
+            </figcaption>
+        </figure>
+        <figure  id="image88">
+            <img src="./Assets/images/homepage_images/product-2.jpg" />
+            <figcaption class="image_caption1" id="image38">
+                <h3>Oculus Quest</h3>
+                <p>All in one gaming headset with lightweight, flexible desig </p>
+                <span><b>&dollar; 399</b></span>
+                <a href="#"><button><i class="fa-solid fa-cart-plus fa-xl"></i> Add To Cart</button></a>
+            </figcaption>
+        </figure>
+    </section>
+    <!-------------------------------------------Oculus quest product three boxes ends here-->
+    <!-------------------------------------------Background image container--------------------------->
+    <section class="background_image_container">
+        <div class="text_on_image">
+            <h3>THE PRIME<br>AMBASSIDER</h3>
+            <a href="#">EXPLORE COLLECTION</a>
+        </div>
+    </section>
+    <!-----------------------background image closed--------------------------------------->
+    <!-----------------------------alians container-------------------------------------------->
+    <section class="stater_plan_container">
+        <div class="box1">
+            <div class="sub_box">
+                <h3>stater plan</h3>
+                <div>
+                    <b>&dollar; 10</b><br>
+                    /weekly
+                </div>
+            </div>
+            <div class="plan_image">
+                <img src="./Assets/images/homepage_images/pricing-5.png" alt="pricing-5" />
+            </div>
+            <div>
+                <input type="checkbox" id="check" />
+                <label for="check"> 2 Acounts</label><br>
+                <input type="checkbox" id="check" />
+                <label for="check"> Up to 5 GB space</label><br>
+                <input type="checkbox" id="check" />
+                <label for="check"> 1 Domain</label><br>
+                <input type="checkbox" id="check" />
+                <label for="check"> 24/7 support</label>
+            </div>
+            <div>
+                <button>GET STARTED</button>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="sub_box">
+                <h3>stater plan</h3>
+                <div>
+                    <b>&dollar; 10</b><br>
+                    /monthly
+                </div>
+            </div>
+            <div class="plan_image">
+                <img src="./Assets/images/homepage_images/pricing-5.png" alt="pricing-5" />
+            </div>
+            <div>
+                <input type="checkbox" id="check" />
+                <label for="check"> 2 Acounts</label><br>
+                <input type="checkbox" id="check" />
+                <label for="check"> Up to 5 GB space</label><br>
+                <input type="checkbox" id="check" />
+                <label for="check"> 1 Domain</label><br>
+                <input type="checkbox" id="check" />
+                <label for="check"> 24/7 support</label>
+            </div>
+            <div>
+                <button>GET STARTED</button>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="sub_box">
+                <h3>stater plan</h3>
+                <div>
+                    <b>&dollar; 10</b><br>
+                    /yearly
+                </div>
+            </div>
+            <div class="plan_image">
+                <img src="./Assets/images/homepage_images/pricing-5.png" alt="pricing-5" />
+            </div>
+            <div>
+                <input type="checkbox" id="check" />
+                <label for="check"> 2 Acounts</label><br>
+                <input type="checkbox" id="check" />
+                <label for="check"> Up to 5 GB space</label><br>
+                <input type="checkbox" id="check" />
+                <label for="check"> 1 Domain</label><br>
+                <input type="checkbox" id="check" />
+                <label for="check"> 24/7 support</label>
+            </div>
+            <div>
+                <button>GET STARTED</button>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------All-in-One vr Oculus big image------------------------------------>
+    <section class="product_oculus_vr">
+        <div class="product-3">
+            <p>All-in-one VR</p>
+            <h3>Oculus VR</h3>
+            <img src="./Assets/images/homepage_images/product-3.jpg" />
+        </div>
+        <div class="small_products">
+            <img src="./Assets/images/homepage_images/thunb-1.jpg" alt="thumb1" />
+            <img src="./Assets/images/homepage_images/thunb-2.jpg" alt="thumb2" />
+            <img src="./Assets/images/homepage_images/thunb-3.jpg" alt="thumb3" />
+            <img src="./Assets/images/homepage_images/thunb-4.jpg" alt="thumb4" />
+            <img src="./Assets/images/homepage_images/thunb-5.jpg" alt="thumb5" />
+        </div>
+
+        <div class="oculus_vr_product_specifications_main_container">
+            <div class="oculus_vr_product_specifications">
+                <div class="price_details">
+                    <p>All-in-one VR</p>
+                    <h3>Oculus VR</h3>
+                    <p>select your oculus:</p>
+                    <div class="select_your_oculus">
+                        <img src="./Assets/images/homepage_images/product-items-1.jpg" alt="product_item1" />
+                        <img src="./Assets/images/homepage_images/product-items-2.jpg" alt="product_item1" />
+                        <img src="./Assets/images/homepage_images/product-items-3.jpg" alt="product_item1" />
+                    </div>
+                    <div class="specifications">
+                        <div class="color_div">
+                            <div>
+                                <div>
+                                    <p>select color: <b>Grey</b></p><br>
+                                </div>
+                                <div class="circle_group">
+                                    <div class="circle1"></div>
+                                    <div class="circle2"></div>
+                                    <div class="circle3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <p>memory(GB):</p><br>
+                            <div class="memory">
+                                <select id="country">
+                                    <option value="">32 gb</option>
+                                    <option value="64gb">I64gb</option>
+                                    <option value="128gb">128gb</option>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="quant">
+                            <p>Select Quantity</p><br>
+                            <div class="Quantity">
+                                
+                                <i id="icon_minus" 
+                                    class="fa-solid fa-minus fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span id="number">1</span>&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                   id="icon_plus" class="fa-solid fa-plus fa-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shipping_country">
+                        <p>select shipping country: <b>+ &dollar; 30 USD</b></p>
+                        <select id="country">
+                            <option value="">-- select country --</option>
+                            <option value="India">India</option>
+                            <option value="Pak">Pak</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="price_container">
+                <div class="price_dollars">
+                    <p>price:</p>
+                    <span><b>&dollar; 149 USD</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><del>&dollar; 179
+                            USD</del></span><br>
+                </div>
+                <div id="buttons_card2">
+                    <span><button id="add_to_cart1"><i class="fa-solid fa-cart-plus fa-xl"></i>&nbsp;ADD TO
+                            CART</button></span>
+                    <span><button id="add_to_cart2"><i class="fa-solid fa-cart-plus fa-xl"></i>&nbsp;BUY
+                            NOW</button></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product4_container">
+        <div class="product4">
+            <h3>Haritage 1921</h3>
+            <p>Minimalistic & modern</p>
+            <a href="#">EXPLORE&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-greater-than fa-lg"></i></a>
+            <img src="./Assets/images/homepage_images/product-4.jpg" alt="product1" />
+        </div>
+        <div class="product4">
+            <h3>Haritage 1921</h3>
+            <p>Minimalistic & modern</p>
+            <a href="#">EXPLORE&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-greater-than fa-lg"></i></a>
+            <img src="./Assets/images/homepage_images/product-4.jpg" alt="product1" />
+        </div>
+        <div class="product4">
+            <h3>Haritage 1921</h3>
+            <p>Minimalistic & modern</p>
+            <a href="#">EXPLORE&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-greater-than fa-lg"></i></a>
+            <img src="./Assets/images/homepage_images/product-4.jpg" alt="product1" />
+        </div>
+    </section>
+    <section class="last_container">
+        <div class="boxes">
+            <i class="fa-solid fa-user-group fa-2xl"></i>
+            <h3>300</h3>
+            <p>Happy Clients</p>
+        </div>
+        <div class="boxes">
+            <div><i class="fa-solid fa-check fa-2xl"></i></div>
+            <h3>30</h3>
+            <p>Complete Projects</p>
+        </div>
+        <div class="boxes">
+            <div><i class="fa-regular fa-hourglass fa-2xl"></i></div>
+            <h3>12</h3>
+            <p>Pending Projects</p>
+        </div>
+        <div class="boxes">
+            <div><i class="fa-solid fa-mug-hot fa-2xl"></i></div>
+            <h3>960</h3>
+            <p>Cup of Tea</p>
+        </div>
+    </section>
+    <section class="get_in_touch_section">
+        <div>
+            <b>Get in touch</b>
+            <p>Be the first person to know when new products drop and stay tuned.</p>
+        </div>
+        <div>
+            <div class="email_sub_div">
+                <p id="email">Enter your email address:</p>
+                <i class="fa-solid fa-user"></i>
+                <input type="email" name="email" class="input-field2" placeholder="user@email.com" autocomplete="off" />
+                <div id="icon2"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer_part">
+        <hr>
+        <section class="footer_starting_part">
+            <div class="social_media_icons">
+                <div class="follow">
+                    <span>
+                        <p><b>Follow Us:</b></p>
+                    </span>
+                </div>
+                <div class="social_icons">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                    <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                </div>
+            </div>
+            <div class="we_accept_payments">
+                <div class="payment">We Accept:</div>
+                <img src="./Assets/images/homepage_images/payment.png" />
+            </div>
+        </section>
+        <hr>
+        <section class="page_info">
+            <section>
+                <p>Categories</p>
+                <ul>
+                    <li>
+                        <b>Outfit</b>
+                    </li>
+                    <li>
+                        <b>Sunglasses</b>
+                    </li>
+                    <li>
+                        <b> Watches</b>
+                    </li>
+                    <li>
+                        <b> Bags</b>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <p>Information</p>
+                <ul>
+                    <li>
+                        <b>About Us</b>
+                    </li>
+                    <li>
+                        <b>Contact Us</b>
+                    </li>
+                    <li>
+                        <b>Site map</b>
+                    </li>
+                    <li>
+                        <b>FAQs page</b>
+                    </li>
+                    <li>
+                        <b>Comming soon</b>
+                    </li>
+                    <li>
+                        <b>404 page</b>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <p>My Account</p>
+                <li>
+                    <b>Orders</b>
+                </li>
+                <li>
+                    <b>Downloads</b>
+                </li>
+                <li>
+                    <b>Addresses</b>
+                </li>
+                <li>
+                    <b>Account details</b>
+                </li>
+                <li>
+                    <b>Logout</b>
+                </li>
+            </section>
+            <section>
+                <p>Community</p>
+                <li>
+                    <b>VR for Good</b>
+                </li>
+                <li>
+                    <b>Launch Pad</b>
+                </li>
+                <li>
+                    <b>Creators Lab</b>
+                </li>
+                <li>
+                    <b>Forums</b>
+                </li>
+                <li>
+                    <b>Support</b>
+                </li>
+            </section>
+        </section>
+    </footer>
+    <script src="./JavaScript/home.js"></script>
+</body>
+
+</html>
